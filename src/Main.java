@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner (System.in);
+        String [] marca = new String []
         int n;
         do{
             System.out.println("1 - aggiunta di una nuova auto");
@@ -14,7 +15,7 @@ public class Main {
             System.out.println("7 - visualizzare tutti i modelli che diesel");
             System.out.println("8 - esci");
 
-            System.out.println("Inserisci un numero: ");
+            System.out.println("Inserisci un numero da 1 - 8: ");
             n = in.nextInt();
 
             if (n == 1){
@@ -43,5 +44,4 @@ public class Main {
 
 
     }
-    private static
 }
