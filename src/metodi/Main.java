@@ -1,10 +1,19 @@
 package metodi;
 import java.util.Scanner;
+
+import static metodi.Funzioni.aggiuntaAuto;
+
 public class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner (System.in);
-
+        String [] marca = new String [100];
+        String [] modello = new String [100];
+        double [] prezzo = new double [100];
+        double prezzoAuto = 0.0;
+        String marcaAuto = "";
+        String modelloAuto = "";
+        int conta = 0;
         int n;
         do{
             System.out.println("1 - aggiunta di una nuova auto");
@@ -20,6 +29,12 @@ public class Main {
             n = in.nextInt();
 
             if (n == 1){
+
+                prezzoAuto = in.nextDouble();
+                modelloAuto = in.nextLine();
+                marcaAuto = in.nextLine();
+
+                int aggiungi = aggiuntaAuto (marca, modello, prezzo, marcaAuto, modelloAuto, prezzoAuto, conta);
 
             }
             if (n == 2){
