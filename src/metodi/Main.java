@@ -1,9 +1,10 @@
+package metodi;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner (System.in);
-        String [] marca = new String []
+
         int n;
         do{
             System.out.println("1 - aggiunta di una nuova auto");
