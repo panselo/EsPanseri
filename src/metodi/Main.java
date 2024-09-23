@@ -30,17 +30,28 @@ public class Main {
 
             if (n == 1){
 
+                System.out.println("Inserisci il prezzo dell'auto: ");
                 prezzoAuto = in.nextDouble();
-                modelloAuto = in.nextLine();
-                marcaAuto = in.nextLine();
+                System.out.println("Inserisci il modello dell'auto: ");
+                modelloAuto = in.next();
+                System.out.println("Inserisci la marca dell'auto: ");
+                marcaAuto = in.next();
 
-                int aggiungi = aggiuntaAuto (marca, modello, prezzo, marcaAuto, modelloAuto, prezzoAuto, conta);
+                conta = Funzioni.aggiuntaAuto (marca, modello, prezzo, marcaAuto, modelloAuto, prezzoAuto, conta);
 
             }
             if (n == 2){
 
+                for (int i = 0; i < conta; i ++){
+                    String visuaAuto = Funzioni.visualizzazioneAuto(marca, modello, prezzo, i);
+                    System.out.println(visuaAuto);
+                }
+
             }
             if (n == 3){
+
+
+
 
             }
             if (n == 4){
